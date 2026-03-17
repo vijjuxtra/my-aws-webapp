@@ -1,1 +1,11 @@
 
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>AWS Serverless Web App</h1>
+  <div id="todos"></div>
+  <script>
+    fetch('/prod/todos').then(r=>r.json()).then(data=>console.log(data));
+  </script>
+</body>
+</html>
